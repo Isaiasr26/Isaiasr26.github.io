@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Isaías Reyes</title>
+
+    <meta name="description" content="Todos los proyectos de Isaías Reyes organizados por área: Inteligencia Artificial, Desarrollo Web y Backend.">
+    <meta name="theme-color" content="#020617">
+    <link rel="canonical" href="https://isaiasr26.github.io/proyectos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Proyectos | Isaías Reyes">
+    <meta property="og:description" content="Proyectos de IA, desarrollo web y backend.">
+    <meta property="og:url" content="https://isaiasr26.github.io/proyectos.html">
+    <meta property="og:image" content="https://isaiasr26.github.io/assets/avatar.jpg">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,300..600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.documentElement.classList.add('js');
+        setTimeout(function () { if (!window.__portfolioReady) document.documentElement.classList.remove('js'); }, 3500);
+    </script>
+</head>
+<body>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="header" id="top">
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand" aria-label="Isaías Reyes, ir al inicio">
+                <img src="assets/favicon.svg" alt="" width="30" height="30"><span>Isaías<b>.</b></span>
+            </a>
+            <nav class="nav" aria-label="Principal">
+                <ol class="nav-list" id="navList">
+                    <li><a href="index.html#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="index.html#trayectoria" class="nav-link">Trayectoria</a></li>
+                    <li><a href="proyectos.html" class="nav-link active" aria-current="page">Proyectos</a></li>
+                    <li><a href="index.html#stack" class="nav-link">Stack</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ol>
+            </nav>
+            <div class="nav-icons">
+                <a href="https://github.com/Isaiasr26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/isaiasreyes-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero hero-archive">
+            <svg class="circuit" aria-hidden="true"></svg>
+            <svg class="circuit-pulses" aria-hidden="true"></svg>
+            <div class="wrap">
+                <a href="index.html" class="back-link intro"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+                <p class="label intro">Archivo de proyectos</p>
+                <h1 class="intro">Todos los <span class="hl">proyectos</span></h1>
+                <p class="hero-text intro">Lo que he construido, organizado por área. Pulsa “Ver detalle” en cualquier proyecto para ver más.</p>
+                <div class="filters intro" role="tablist" aria-label="Filtrar por área" id="areaFilters"></div>
+            </div>
+        </section>
+
+        <section class="archive">
+            <div class="wrap" data-projects="all"></div>
+            <noscript><p class="wrap">Activa JavaScript para ver la lista de proyectos.</p></noscript>
+        </section>
+    </main>
+
+    <!-- Modal de proyecto -->
+    <div id="projectModal" class="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <div class="modal-media" id="modalMedia"></div>
+            <div class="modal-body">
+                <p class="label" id="modalMeta"></p>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-sub" id="modalSub"></p>
+                <ul class="modal-points" id="modalPoints"></ul>
+                <div class="tags" id="modalTags"></div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-mini">
+        <div class="wrap">
+            <div class="contact glow">
+                <div>
+                    <p class="contact-text">¿Tienes un proyecto en mente o quieres hablar sobre IA y tecnología?</p>
+                    <div class="email-row">
+                        <a href="mailto:isaiasdrt2662@gmail.com" class="email">isaiasdrt2662@gmail.com</a>
+                        <button type="button" class="copy-btn" id="copyEmail" data-email="isaiasdrt2662@gmail.com" aria-label="Copiar correo"><i class="far fa-copy"></i><span>Copiar</span></button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/isaiasreyes-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Isaiasr26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:isaiasdrt2662@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© <span id="year">2026</span> Isaías Reyes · Panamá</p>
+        </div>
+    </footer>
+
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

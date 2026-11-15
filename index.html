@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías Reyes | Desarrollador Full Stack &amp; IA</title>
+
+    <meta name="description" content="Portafolio de Isaías Reyes, estudiante de Ingeniería de Sistemas y Computación (UTP, Panamá). Desarrollo full stack, agentes de IA y modelos predictivos.">
+    <meta name="theme-color" content="#020617">
+    <link rel="canonical" href="https://isaiasr26.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Isaías Reyes | Desarrollador Full Stack & IA">
+    <meta property="og:description" content="Desarrollo full stack, agentes de IA y modelos predictivos.">
+    <meta property="og:url" content="https://isaiasr26.github.io/">
+    <meta property="og:image" content="https://isaiasr26.github.io/assets/avatar.jpg">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,300..600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.documentElement.classList.add('js');
+        // Pantalla de carga: solo la primera vez por sesión y si no se pide reducir movimiento
+        try {
+            if (!sessionStorage.getItem('ir-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('is-loading');
+                sessionStorage.setItem('ir-intro', '1');
+            }
+        } catch (e) {}
+        setTimeout(function () { if (!window.__portfolioReady) document.documentElement.classList.remove('js', 'is-loading'); }, 3500);
+    </script>
+</head>
+<body>
+
+    <!-- PANTALLA DE CARGA -->
+    <div class="loader" aria-hidden="true">
+        <svg class="loader-chip" viewBox="0 0 120 120">
+            <g class="pins">
+                <path d="M42 8v14M60 8v14M78 8v14M42 98v14M60 98v14M78 98v14M8 42h14M8 60h14M8 78h14M98 42h14M98 60h14M98 78h14"/>
+            </g>
+            <rect class="frame" x="24" y="24" width="72" height="72" rx="12" pathLength="100"/>
+            <text class="letters" x="60" y="70" text-anchor="middle">IR</text>
+        </svg>
+        <p class="loader-text">inicializando<span>_</span></p>
+    </div>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="header" id="top">
+        <div class="wrap header-inner">
+            <a href="#top" class="brand" aria-label="Isaías Reyes, ir al inicio">
+                <img src="assets/favicon.svg" alt="" width="30" height="30"><span>Isaías<b>.</b></span>
+            </a>
+            <nav class="nav" aria-label="Principal">
+                <ol class="nav-list" id="navList">
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#trayectoria" class="nav-link">Trayectoria</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li data-research-link hidden><a href="#publicaciones" class="nav-link">Investigación</a></li>
+                    <li><a href="#stack" class="nav-link">Stack</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ol>
+            </nav>
+            <div class="nav-icons">
+                <a href="https://github.com/Isaiasr26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/isaiasreyes-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <!-- HERO -->
+        <section class="hero">
+            <svg class="circuit" aria-hidden="true"></svg>
+            <svg class="circuit-pulses" aria-hidden="true"></svg>
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="label intro">Ingeniería de Sistemas · UTP · Panamá</p>
+                    <h1 class="intro">Hola, soy<br><span class="hl">Isaías Reyes</span></h1>
+                    <h2 class="hero-role intro"><span class="bar" aria-hidden="true"></span>Desarrollador Full Stack &amp; IA</h2>
+                    <p class="hero-text intro">Construyo aplicaciones web, agentes de inteligencia artificial y modelos predictivos que resuelven problemas reales, desde un asistente personal por voz hasta plataformas de análisis clínico.</p>
+                    <div class="btns intro">
+                        <a href="#proyectos" class="btn btn-primary">Ver proyectos <i class="fas fa-arrow-down"></i></a>
+                        <a href="https://github.com/Isaiasr26" target="_blank" rel="noopener" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/isaiasreyes-/" target="_blank" rel="noopener" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="cv/Isaias-Reyes-CV.pdf" download class="btn" id="cvLink"><i class="fas fa-download"></i> CV</a>
+                    </div>
+                </div>
+
+                <div class="chip intro" aria-hidden="false">
+                    <div class="pins top" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                    <div class="pins bottom" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                    <div class="pins left" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="pins right" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="chip-body"><img src="assets/avatar.jpg" alt="Isaías Reyes" width="460" height="460"></div>
+                    <span class="chip-tag" aria-hidden="true">IR-2026 · PANAMÁ</span>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <dl class="bus glow intro">
+                    <div><dt><i class="fas fa-microchip"></i>Rol</dt><dd>Full Stack &amp; IA</dd></div>
+                    <div><dt><i class="fas fa-location-dot"></i>Base</dt><dd>Ciudad de Panamá</dd></div>
+                    <div><dt><i class="fas fa-bolt"></i>Ahora</dt><dd>Construyendo C.O.R.I</dd></div>
+                    <div><dt><i class="fas fa-graduation-cap"></i>Egreso</dt><dd>2028 · UTP</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- 01 SOBRE MÍ -->
+        <section id="sobre-mi" class="sec">
+            <div class="wrap">
+                <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Sobre mí</h2><span class="trace" aria-hidden="true"></span></div>
+                <div class="about">
+                    <div class="about-text reveal">
+                        <p>Estudio Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Panamá. Me apasiona la Inteligencia Artificial aplicada: agentes que automatizan tareas, modelos que ayudan a tomar decisiones y software full stack que la gente usa a diario.</p>
+                        <p>Combino lo técnico con el liderazgo en la comunidad tecnológica: presido la agrupación EurusUTP, organizo conferencias como la EurusConf 2026: Python Edition y participo en IEEE Computer Society y Rotaract, promoviendo el impacto positivo a través de la tecnología y el trabajo en equipo.</p>
+                    </div>
+                    <aside class="now glow reveal" aria-labelledby="now-title">
+                        <div class="now-head"><span class="led" aria-hidden="true"></span><h3 id="now-title">Ahora mismo</h3><span class="now-date">nov. 2026</span></div>
+                        <ul>
+                            <li><i class="fas fa-hammer" aria-hidden="true"></i><span class="k">Construyendo</span><span>C.O.R.I, mi asistente de IA por voz</span></li>
+                            <li><i class="fas fa-code" aria-hidden="true"></i><span class="k">Desarrollando</span><span>El sistema de gestión de la FCCL</span></li>
+                            <li><i class="fas fa-users" aria-hidden="true"></i><span class="k">Liderando</span><span>Agrupación EurusUTP</span></li>
+                            <li><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="k">Estudiando</span><span>Ing. de Sistemas en la UTP · 3.er año</span></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 TRAYECTORIA -->
+        <section id="trayectoria" class="sec">
+            <div class="wrap">
+                <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Trayectoria</h2><span class="trace" aria-hidden="true"></span><span class="meta">5 registros</span></div>
+
+                <div class="tabs reveal" role="tablist" aria-label="Tipo de trayectoria">
+                    <button type="button" class="tab active" role="tab" aria-selected="true" data-filter="profesional"><i class="fas fa-briefcase"></i> Profesional <span class="tab-count">2</span></button>
+                    <button type="button" class="tab" role="tab" aria-selected="false" data-filter="liderazgo"><i class="fas fa-users"></i> Liderazgo <span class="tab-count">3</span></button>
+                    <span class="tab-indicator" aria-hidden="true"></span>
+                </div>
+
+                <div class="timeline reveal" id="timeline">
+                    <article class="tl-item glow" data-kind="profesional">
+                        <span class="tl-node" aria-hidden="true"></span>
+                        <span class="tl-date">Ago. 2026 – Presente</span>
+                        <h3>Desarrollador Full Stack</h3>
+                        <p class="tl-org">Fundación Carmen Conte Lombardo</p>
+                        <p>Diseño y desarrollo del sistema de gestión institucional (expedientes, citas, inventario e informes), que hoy centraliza más de 600 expedientes, y del sitio web oficial de la fundación.</p>
+                    </article>
+                    <article class="tl-item glow" data-kind="profesional">
+                        <span class="tl-node" aria-hidden="true"></span>
+                        <span class="tl-date">Ene. 2026 – May. 2026</span>
+                        <h3>Soporte Técnico y Comunicación Digital</h3>
+                        <p class="tl-org">Datar Consulting</p>
+                        <p>Soporte técnico de hardware y software, herramientas digitales de seguimiento interno y gestión de la comunicación digital de la empresa.</p>
+                    </article>
+                    <article class="tl-item glow" data-kind="liderazgo">
+                        <span class="tl-node" aria-hidden="true"></span>
+                        <span class="tl-date">Actualidad</span>
+                        <h3>Presidente</h3>
+                        <p class="tl-org">Agrupación EurusUTP</p>
+                        <p>Dirijo la agrupación y su equipo directivo, y organizo eventos tecnológicos como la EurusConf 2026: Python Edition para fortalecer la comunidad de desarrolladores en la FISC.</p>
+                    </article>
+                    <article class="tl-item glow" data-kind="liderazgo">
+                        <span class="tl-node" aria-hidden="true"></span>
+                        <span class="tl-date">Actualidad</span>
+                        <h3>Tesorero</h3>
+                        <p class="tl-org">IEEE Computer Society · Rama UTP</p>
+                        <p>Administro el presupuesto anual y la transparencia de los fondos de la rama.</p>
+                    </article>
+                    <article class="tl-item glow" data-kind="liderazgo">
+                        <span class="tl-node" aria-hidden="true"></span>
+                        <span class="tl-date">2026 – 2027</span>
+                        <h3>Presidente</h3>
+                        <p class="tl-org">Club Rotaract El Dorado</p>
+                        <p>Lidero iniciativas de impacto social y coordino al equipo directivo en la planificación y ejecución del plan anual.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 PROYECTOS (fichas generadas desde projects.js) -->
+        <section id="proyectos" class="sec">
+            <div class="wrap">
+                <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Proyectos</h2><span class="trace" aria-hidden="true"></span><a class="meta meta-link" href="proyectos.html">Ver todos →</a></div>
+                <div class="sheets" data-projects="featured"></div>
+                <noscript><p><a class="btn" href="proyectos.html">Ver todos los proyectos</a></p></noscript>
+                <div class="more reveal"><a href="proyectos.html" class="btn">Ver todos los proyectos <i class="fas fa-arrow-right"></i></a></div>
+            </div>
+        </section>
+
+        <!-- INVESTIGACIÓN (preparada; aparece sola cuando agregues un .paper) -->
+        <section id="publicaciones" class="sec" hidden>
+            <div class="wrap">
+                <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Investigación</h2><span class="trace" aria-hidden="true"></span></div>
+                <div class="papers">
+                    <!-- Copia este bloque por cada publicación:
+                    <article class="paper glow reveal">
+                        <span class="label">Conferencia o revista · Año</span>
+                        <h3>Título del artículo</h3>
+                        <p>Resumen breve: problema, método y resultado principal.</p>
+                        <a class="link" href="https://doi.org/..." target="_blank" rel="noopener">Leer artículo <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </article>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 STACK -->
+        <section id="stack" class="sec">
+            <div class="wrap">
+                <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Stack</h2><span class="trace" aria-hidden="true"></span><span class="meta">Pasa el cursor para pausar</span></div>
+            </div>
+            <div class="stack reveal" id="stackRows"></div>
+        </section>
+    </main>
+
+    <!-- Modal de proyecto -->
+    <div id="projectModal" class="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <div class="modal-media" id="modalMedia"></div>
+            <div class="modal-body">
+                <p class="label" id="modalMeta"></p>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-sub" id="modalSub"></p>
+                <ul class="modal-points" id="modalPoints"></ul>
+                <div class="tags" id="modalTags"></div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 05 CONTACTO -->
+    <footer id="contacto" class="sec footer">
+        <div class="wrap">
+            <div class="sec-head reveal"><span class="num" aria-hidden="true"></span><h2>Contacto</h2><span class="trace" aria-hidden="true"></span></div>
+            <div class="contact glow reveal">
+                <div>
+                    <p class="contact-text">¿Tienes un proyecto en mente o quieres hablar sobre IA y tecnología?</p>
+                    <div class="email-row">
+                        <a href="mailto:isaiasdrt2662@gmail.com" class="email">isaiasdrt2662@gmail.com</a>
+                        <button type="button" class="copy-btn" id="copyEmail" data-email="isaiasdrt2662@gmail.com" aria-label="Copiar correo"><i class="far fa-copy"></i><span>Copiar</span></button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/isaiasreyes-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Isaiasr26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:isaiasdrt2662@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© <span id="year">2026</span> Isaías Reyes · Panamá</p>
+        </div>
+    </footer>
+
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
